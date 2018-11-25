@@ -9,6 +9,6 @@ public class LoadScene : MonoBehaviour {
     public void loadSceneByIndex (int index) {
         SceneManager.LoadScene(index);
         SceneManager.LoadScene("Scene2", LoadSceneMode.Additive);
-        Panel.gameObject.SetActive(false);
+        
     }
 }
