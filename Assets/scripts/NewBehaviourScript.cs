@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class win : MonoBehaviour {
+public class NewBehaviourScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,12 +13,4 @@ public class win : MonoBehaviour {
 	void Update () {
 		
 	}
-
-    void OnEnterTrigger2D(Collider2D other)
-    {
-        if(other.name == "Player")
-        {
-            Debug.Log("You win!!");
-        }
-    }
 }
