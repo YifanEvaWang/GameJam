@@ -4,16 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class FinalTrigger : MonoBehaviour {
-   [SerializeField] private string LoadLevel;
-    
+    public string levelToLoad;
 
-    private void OnTriggerEnter(Collider other)
+     void OnTriggerEnter2D(Collider2D other)
     {
-
-        if(other.CompareTag("Player"))
+        if(other.name == "sprite0playerf1[1]")
         {
-            SceneManager.LoadScene(LoadLevel);
-                    
+            SceneManager.LoadScene(levelToLoad);
         }
     }
 
