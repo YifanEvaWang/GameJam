@@ -4,6 +4,7 @@ Obj/*
 Build/*
 Builds/*
 Assets/AssetStoreTools*
+ProjectSettings/*
 
 # Visual Studio cache directory
 .vs/*
