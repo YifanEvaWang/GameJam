@@ -1,0 +1,20 @@
+Sean Dialogue
+
+
+initial
+"Oh, hello there! Always good to see a new face around here!"
+
+>Who are you?
+"The name's Sean, and this here is my seap! Hoho!"
+
+>A shop in a maze?
+"Well sure, I don't get many customers, but there's quite a lot of treasure in these halls."
+"So it was inevitable that adventurers like you would come wandering through to get it! That's my market!"
+
+>How did you get here?
+"Ah, well that's quite a long story..."
+"At least I assume so! The truth is, I just woke up here one day, next to all these items!"
+"Some of them might be useful to you if you want to get out of here, hoho!"
+
+>Buy
+(TODO: however we're gonna do the actual shop thing)
