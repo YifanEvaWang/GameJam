@@ -8,6 +8,7 @@ public class Player : MonoBehaviour {
     private float speed;
     Animator anim;
     static int coinAmount = 0;
+    public static char haskey = 'N';
 
 
     private Vector2 direction;
@@ -51,8 +52,10 @@ public class Player : MonoBehaviour {
         }
     }
 
-    public static void collectCoin()
+    public static void collectCoin(int amount)
     {
+
+        scoreScript.coinAmount += amount;
         scoreScript.coinAmount++;
         Debug.Log("You have " + coinAmount + " coins right now");
     }

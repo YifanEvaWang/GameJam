@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class coin : MonoBehaviour {
+public class door : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -14,13 +14,12 @@ public class coin : MonoBehaviour {
 		
 	}
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.name == "sprite0playerf1[1]")
+        if(Player.haskey == 'y')
         {
-            Debug.Log("Coin collected!");
             Destroy(gameObject);
-            Player.collectCoin(1);
+            Player.haskey = 'N';
         }
     }
 }

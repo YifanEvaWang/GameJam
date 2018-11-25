@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class coin : MonoBehaviour {
+public class treasure : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,14 +13,13 @@ public class coin : MonoBehaviour {
 	void Update () {
 		
 	}
-
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.name == "sprite0playerf1[1]")
         {
-            Debug.Log("Coin collected!");
+            Debug.Log("100 coins collected!");
             Destroy(gameObject);
-            Player.collectCoin(1);
+            Player.collectCoin(100);
         }
     }
 }
