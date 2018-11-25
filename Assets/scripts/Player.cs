@@ -7,6 +7,7 @@ public class Player : MonoBehaviour {
     [SerializeField]
     private float speed;
     Animator anim;
+    static int coinAmount = 0;
 
 
     private Vector2 direction;
@@ -48,5 +49,11 @@ public class Player : MonoBehaviour {
         {
             direction += Vector2.right;
         }
+    }
+
+    public static void collectCoin()
+    {
+        coinAmount++;
+        Debug.Log("You have " + coinAmount + " coins right now");
     }
 }

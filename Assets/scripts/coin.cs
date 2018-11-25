@@ -13,4 +13,14 @@ public class coin : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.name == "sprite0playerf1[1]")
+        {
+            Debug.Log("Coin collected!");
+            Destroy(gameObject);
+            Player.collectCoin();
+        }
+    }
 }
