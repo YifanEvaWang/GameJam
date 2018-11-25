@@ -53,7 +53,7 @@ public class Player : MonoBehaviour {
 
     public static void collectCoin()
     {
-        coinAmount++;
+        scoreScript.coinAmount++;
         Debug.Log("You have " + coinAmount + " coins right now");
     }
 }
